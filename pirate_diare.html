@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ежедневник</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ежедневник</h1>
+            <p>Для настоящих пиратов!</p>
+        </header>
+        
+        <!-- Левая колонка - форма добавления -->
+        <section class="task-form">
+            <div class="form-image">
+                <img src="pic/3.jpg" alt="Пиратская карта">
+            </div>
+            <form id="addTaskForm">
+                <div class="form-group">
+                    <label for="taskTitle">Название задачи</label>
+                    <input type="text" id="taskTitle" placeholder="Введите название задачи" required>
+                </div>
+                <div class="form-group">
+                    <label for="taskDescription">Описание</label>
+                    <textarea id="taskDescription" placeholder="Добавьте описание (необязательно)"></textarea>
+                </div>
+                <button type="submit" class="btn">Добавить задачу</button>
+            </form>
+        </section>
+        
+        <!-- Правая колонка - список задач -->
+        <section class="tasks-section">
+            <div class="tasks-header">
+                <h2>Мои задачи</h2>
+            </div>
+            <div class="tasks-container" id="tasksContainer">
+                <div class="empty-state">
+                    <h3>У вас пока нет задач</h3>
+                    <p>Добавьте свою первую задачу с помощью формы выше</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
